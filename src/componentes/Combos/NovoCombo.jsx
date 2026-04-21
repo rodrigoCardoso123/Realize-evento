@@ -40,7 +40,7 @@ export default function NovoCombo({ adicionarCombo, combos }) {
 
  try {
     await axios.post(
-      "https://countable-dismiss-undoing.ngrok-free.dev/combos",
+      "https://realizeventos.onrender.com/combos",
       novoCombo,
       {
         headers: {

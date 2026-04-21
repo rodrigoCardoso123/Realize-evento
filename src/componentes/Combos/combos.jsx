@@ -8,13 +8,6 @@ import { useEffect } from 'react';
 function Combos({ combos, deletarCombo }) {
   const navigate = useNavigate();
 
-  const api = axios.create({
-    baseURL: 'https://countable-dismiss-undoing.ngrok-free.dev',
-    headers: {
-      'ngrok-skip-browser-warning': 'true'
-    }
-  });
-
   return (
     <div className={estilo.app}>
 

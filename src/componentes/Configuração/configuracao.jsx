@@ -16,7 +16,7 @@ function Configuração(){
 
         try {
             const res = await axios.put(
-      "https://countable-dismiss-undoing.ngrok-free.dev/adm/alterar-senha",
+      "https://realizeventos.onrender.com/adm/alterar-senha",
       {
         email,
         novaSenha
@@ -31,7 +31,7 @@ function Configuração(){
 
             alert("Senha alterada com sucesso!");
 
-            // limpa campos
+            
             setEmail('');
             setNovaSenha('');
             setConfirmarSenha('');

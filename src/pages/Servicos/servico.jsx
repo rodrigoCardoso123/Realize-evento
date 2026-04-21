@@ -9,7 +9,7 @@ function Servico({ combos, deletarCombo }) {
 
 
     const api = axios.create({
-    baseURL: 'https://countable-dismiss-undoing.ngrok-free.dev',
+    baseURL: 'https://realizeventos.onrender.com/',
     headers: {
         'ngrok-skip-browser-warning': 'true'
     }

@@ -52,7 +52,7 @@ function App() {
     async function carregar() {
       try {
         const res = await axios.get(
-          "https://countable-dismiss-undoing.ngrok-free.dev/combos",
+          "https://realizeventos.onrender.com/combos",
           {
             headers: { "ngrok-skip-browser-warning": "true" }
           }
@@ -72,7 +72,7 @@ function App() {
     async function carregarOrcamentos() {
       try {
         const resposta = await axios.get(
-          "https://countable-dismiss-undoing.ngrok-free.dev/orcamentos",
+          "https://realizeventos.onrender.com/orcamentos",
           {
             headers: { "ngrok-skip-browser-warning": "true" }
           }
@@ -91,7 +91,7 @@ function App() {
   async function deletarCombo(id) {
     try {
       await axios.delete(
-        `https://countable-dismiss-undoing.ngrok-free.dev/combos/${id}`,
+        `https://realizeventos.onrender.com/combos/${id}`,
         {
           headers: { "ngrok-skip-browser-warning": "true" }
         }
