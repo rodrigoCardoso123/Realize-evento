@@ -94,7 +94,8 @@
   align-items: start;
   flex-direction: column;
   gap: 10px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 15px;
   height: auto;
   background-color: var(--cinza-claro);
@@ -198,7 +199,8 @@
 
 .imgs_portifolio {
   border-radius: 12px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 260px;
   object-fit: cover;
 }
