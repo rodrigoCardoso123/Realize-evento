@@ -9,6 +9,7 @@ import Dashboard from './pages/dashborard-administrador/dashboard.jsx'
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import { HashRouter } from 'react-router-dom'
 
 function Layout({ combos, adicionarCombo, deletarCombo, orcamento }) {
   const location = useLocation();
@@ -105,12 +106,14 @@ function App() {
   }
 
   return (
-    <BrowserRouter  basename="/Realize-evento/" >
-      <Layout combos={combos}
-        adicionarCombo={adicionarCombo}
-        deletarCombo={deletarCombo} 
-        orcamento={orcamento}/>
-    </BrowserRouter>
+    <HashRouter>
+    <Layout
+      combos={combos}
+      adicionarCombo={adicionarCombo}
+      deletarCombo={deletarCombo}
+      orcamento={orcamento}
+    />
+  </HashRouter>
   )
 }
 
