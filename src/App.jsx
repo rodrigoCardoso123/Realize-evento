@@ -106,14 +106,12 @@ function App() {
   }
 
   return (
-    <HashRouter>
-    <Layout
-      combos={combos}
-      adicionarCombo={adicionarCombo}
-      deletarCombo={deletarCombo}
-      orcamento={orcamento}
-    />
-  </HashRouter>
+    <BrowserRouter  basename="/Realize-evento/" >
+      <Layout combos={combos}
+        adicionarCombo={adicionarCombo}
+        deletarCombo={deletarCombo} 
+        orcamento={orcamento}/>
+    </BrowserRouter>
   )
 }
 
