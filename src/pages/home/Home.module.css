@@ -219,7 +219,8 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   padding: 15px;
   height: auto;
   text-align: center;
@@ -489,7 +490,7 @@
     max-width: 200px;
   }
   .card_processo p{
-    width: 250px;
+    width: 200px;
   }
   .container_card{
     padding: 0px 20px;
