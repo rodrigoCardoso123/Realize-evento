@@ -467,7 +467,6 @@
   color: #fff;
 }
 @media (max-width: 768px) {
-  /* estilos para celular */
   .p_dourados{
     font-size: 14px;
   }
@@ -488,6 +487,9 @@
   .butao_banner{
     margin: 10px 0px;
     max-width: 200px;
+  }
+  .card_processo p{
+    width: 250px;
   }
   .container_card{
     padding: 0px 20px;
@@ -563,7 +565,7 @@
 }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* estilos para tablet */
+  
 }
 .select {
   width: 49%;
