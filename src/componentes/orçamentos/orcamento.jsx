@@ -27,7 +27,7 @@ function Orcamento({ orcamento, deletarCombo }) {
             </div>
           ) : (
             <div className={estilo.lista}>
-              {orcamento.map((orcamentos) => (
+              {orcamento?.map((orcamentos) => (
                 <div key={orcamentos.id} className={estilo.card}>
 
                   <h3>{orcamentos.nome}</h3>

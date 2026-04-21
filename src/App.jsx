@@ -105,7 +105,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/Realize-evento/" >
       <Layout combos={combos}
         adicionarCombo={adicionarCombo}
         deletarCombo={deletarCombo} 

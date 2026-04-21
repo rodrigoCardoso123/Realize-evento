@@ -146,7 +146,7 @@ function Servico({ combos, deletarCombo }) {
                         </div>
                     </div>
 
-                    {combos.map((combo) => (
+                    {combos?.map((combo) => (
                         <div className={estilo.card} key={combo.id}>
                             <div className={estilo.head_card}>
                                 <h1>{combo.icone}</h1>

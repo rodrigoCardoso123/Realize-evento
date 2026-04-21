@@ -2,6 +2,7 @@ import estilo from "./Topo.module.css"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
+import Logo from "../../assets/logo.jfif";
 
 function Topo() {
     const [menuAberto, setMenuAberto] = useState(false);
@@ -9,7 +10,7 @@ function Topo() {
         <>
             <header>
                 <nav className={estilo.navbar}>
-                    <img src="src/assets/logo.jfif" alt="" className={estilo.logo} />
+                    <img src={Logo} alt="" className={estilo.logo} />
                     <button
                         className={estilo.menuToggle}
                         onClick={() => setMenuAberto(!menuAberto)}
@@ -22,7 +23,7 @@ function Topo() {
                         <Link to="/Servico" className={estilo.links} onClick={() => setMenuAberto(false)}>Serviços</Link>
                         <HashLink
                             smooth
-                            to="/#galeria"
+                            to={`${import.meta.env.BASE_URL}#galeria`}
                             className={estilo.links}
                             onClick={() => setMenuAberto(false)}
                         >

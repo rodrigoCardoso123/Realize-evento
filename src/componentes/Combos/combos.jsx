@@ -1,9 +1,7 @@
 import estilo from './combos.module.css'
 import axios, { Axios } from "axios";
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+
 
 function Combos({ combos, deletarCombo }) {
   const navigate = useNavigate();
@@ -25,7 +23,7 @@ function Combos({ combos, deletarCombo }) {
             <button onClick={() => navigate('/Dashboard/Novocombo')}>+ Novo Combo</button>
           </div>
 
-          {combos.length === 0 ? (
+          {combos?.length === 0 ? (
 
             <div className={estilo.recent}>
               <h3>🍽️</h3>
@@ -36,7 +34,7 @@ function Combos({ combos, deletarCombo }) {
           ) : (
 
             <div className={estilo.lista}>
-              {combos.map((combo) => (
+              {combos?.map((combo) => (
                 <div key={combo.id} className={estilo.card}>
 
                   <h3>{combo.icone} {combo.nome}</h3>

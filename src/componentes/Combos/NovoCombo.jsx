@@ -16,7 +16,7 @@ export default function NovoCombo({ adicionarCombo, combos }) {
     duracao: '',
     corCabecalho: '',
     itensInclusos: ''
-    
+
   })
 
   function handleChange(e) {
@@ -25,37 +25,40 @@ export default function NovoCombo({ adicionarCombo, combos }) {
   }
 
   async function handleSubmit() {
-     const novoCombo = {
+    e?.preventDefault();
+    
+    const novoCombo = {
 
-    nome: form.nome,
-    icone: form.icone,
-    descricao: form.descricao,
-    preco: form.preco,
-    precoPessoa: form.precoPessoa,
-    capacidade: form.capacidade,
-    duracao: form.duracao,
-    corCabecalho: form.corCabecalho,
-    itensInclusos: form.itensInclusos
-  };
+      nome: form.nome,
+      icone: form.icone,
+      descricao: form.descricao,
+      preco: form.preco,
+      precoPessoa: form.precoPessoa,
+      capacidade: form.capacidade,
+      duracao: form.duracao,
+      corCabecalho: form.corCabecalho,
+      itensInclusos: form.itensInclusos
+    };
 
- try {
-    await axios.post(
-      "https://realizeventos.onrender.com/combos",
-      novoCombo,
-      {
-        headers: {
-          "ngrok-skip-browser-warning": "true"
+    try {
+      const res = await axios.post(
+        "https://realizeventos.onrender.com/combos",
+        novoCombo,
+        {
+          headers: {
+            "ngrok-skip-browser-warning": "true"
+          }
         }
-      }
-    );
+      );
 
-    adicionarCombo(novoCombo);
-    navigate('/Servico');
+      adicionarCombo(res.data);
 
-  } catch (erro) {
-    console.error("Erro ao salvar:", erro);
+      navigate('/Servico');
+
+    } catch (erro) {
+      console.error("Erro ao salvar:", erro);
+    }
   }
-}
   return (
     <div className={styles.overlay}>
       <div className={styles.modal}>

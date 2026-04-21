@@ -135,7 +135,7 @@ function Historia() {
                 <section className={estilo.section_contato}>
                         <h1>Faça Parte da Nossa História</h1>
                         <p>Deixe-nos criar uma experiência inesquecível para o seu próximo evento especial.</p>
-                        <button className={estilo.butao_banner} onClick={() => navigate('/#formulario')}>Solicitar Orçamento</button>
+                        <button className={estilo.butao_banner} onClick={() => navigate("/", { state: { scrollTo: "formulario" } })}>Solicitar Orçamento</button>
                 </section>
                 <footer className={estilo.footer}>
                     <img src={logo} alt="" />

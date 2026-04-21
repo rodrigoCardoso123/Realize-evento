@@ -89,13 +89,6 @@ function Configuração(){
                     </div>
                 </div>
 
-                <div className={estilo.container_Dados}>
-                    <h4>Dados Do Sistema</h4>
-                    <div>
-                        <button>Exportar Dados</button>
-                        <button>Resetar Dados</button>
-                    </div>
-                </div>
 
             </main>
         </div>

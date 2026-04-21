@@ -27,7 +27,7 @@ function Dashboardd({orcamento, combos}) {
           <div className={estilo.card}>
             <span>🍽️</span>
             <div>
-              <h3>{combos.length}</h3>
+              <h3>{combos?.length || 0}</h3>
               <p>Combos Ativos</p>
             </div>
           </div>
@@ -35,7 +35,7 @@ function Dashboardd({orcamento, combos}) {
           <div className={estilo.card}>
             <span>📋</span>
             <div>
-              <h3>{orcamento.length}</h3>
+              <h3>{orcamento?.length || 0}</h3>
               <p>Orçamentos</p>
             </div>
           </div>

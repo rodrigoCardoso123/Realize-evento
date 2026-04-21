@@ -7,6 +7,7 @@ import Orcamento from '../../componentes/orçamentos/orcamento'
 import Configuração from '../../componentes/Configuração/configuracao'
 import NovoCombo from '../../componentes/Combos/NovoCombo'
 import { useNavigate } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function Dashboard({ adicionarCombo, deletarCombo, combos, orcamento }) {
   const navigate = useNavigate();
@@ -35,12 +36,12 @@ function Dashboard({ adicionarCombo, deletarCombo, combos, orcamento }) {
               <NavLink to="/Dashboard/config" className={estilo.nav}>⚙️ Configurações</NavLink>
             </li>
           </ul>
-          <a href="/" className={estilo.nav_link}>🌐 Ver Site</a>
+          <Link to="/" className={estilo.nav_link}>🌐 Ver Site</Link>
         </div>
 
          <div className={estilo.footer}>
           <small>admin@seusite.com</small>
-          <button onClick={() => navigate('//AreaAdministrador')}>Sair do Painel</button>
+          <button onClick={() => navigate('/AreaAdministrador')}>Sair do Painel</button>
         </div>
       </aside>
 

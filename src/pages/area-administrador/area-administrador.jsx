@@ -1,8 +1,9 @@
 import estilo from './area-administrador.module.css'
 import logo from '../../assets/logo.jfif'
-import axios, { Axios } from "axios";
+import axios from "axios";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Administrador() {
     const [email, setEmail] = useState('');
@@ -66,7 +67,7 @@ function Administrador() {
                             <button type='submit'>ENTRAR NO PAINEL</button>
                         </form>
                     </div>
-                    <a href="/">← Voltar ao site</a>
+                    <Link to="/">← Voltar ao site</Link>
                 </div>
                 <footer className={estilo.footer}>© 2026 Realize Eventos</footer>
             </main>
