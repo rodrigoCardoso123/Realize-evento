@@ -21,14 +21,21 @@ function Topo() {
                         }`}>
                         <Link to="/" className={estilo.links} onClick={() => setMenuAberto(false)}>Início</Link>
                         <Link to="/Servico" className={estilo.links} onClick={() => setMenuAberto(false)}>Serviços</Link>
-                        <HashLink
-                            smooth
-                            to={`${import.meta.env.BASE_URL}#galeria`}
+                        <Link
+                            to="/"
                             className={estilo.links}
-                            onClick={() => setMenuAberto(false)}
+                            onClick={() => {
+                                setMenuAberto(false);
+                                setTimeout(() => {
+                                    const el = document.getElementById("galeria");
+                                    if (el) {
+                                        el.scrollIntoView({ behavior: "smooth" });
+                                    }
+                                }, 100);
+                            }}
                         >
                             Galeria
-                        </HashLink>
+                        </Link>
                         <Link to="/Historia" className={estilo.links} onClick={() => setMenuAberto(false)}>Sobre Nós</Link>
                         <Link to="/AreaAdministrador" className={estilo.links} onClick={() => setMenuAberto(false)}>Contato</Link>
                     </div>

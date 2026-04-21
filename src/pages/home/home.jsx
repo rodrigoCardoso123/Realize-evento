@@ -351,7 +351,7 @@ const location = useLocation();
                             <strong className={estilo.titulos_contato}>Informações de Contato</strong>
                             <div className={estilo.container_contatos_juntos}>
                                 <p className={estilo.p_label}>WhatsApp</p>
-                                <a href="tel:+55 81 99289-5675" className={estilo.link_dourados}>(81) 99289-5675</a>
+                                <a href="https://wa.me/5581992895675" target="_blank" className={estilo.link_dourados}>(81) 99289-5675</a>
                             </div>
 
                             <div className={estilo.container_contatos_juntos}>
@@ -368,7 +368,7 @@ const location = useLocation();
                             <strong className={estilo.titulos_contato}>Redes Sociais</strong>
                             <div className={estilo.container_contatos_links}>
                                 <a href="http://" target="_blank" rel="noopener noreferrer" className={estilo.link_dourados}>Facebook</a>
-                                <a href="" className={estilo.link_dourados}>Instagram</a>
+                                <a href="https://instagram.com" target="_blank" className={estilo.link_dourados}>Instagram</a>
                                 <a href="" className={estilo.link_dourados}>WhatsApp</a>
                             </div>
 
