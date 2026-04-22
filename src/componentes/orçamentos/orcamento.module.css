@@ -2,7 +2,7 @@
   flex: 1;
 }
 
-/* Topbar */
+
 .topbar {
   padding: 15px;
   width: 100%;
@@ -23,7 +23,6 @@
   font-size: 14px;
 }
 
-/* Conteúdo */
 .content {
   width: 100%;
   height: auto;

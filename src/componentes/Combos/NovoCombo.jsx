@@ -25,7 +25,6 @@ export default function NovoCombo({ adicionarCombo, combos }) {
   }
 
   async function handleSubmit() {
-    e?.preventDefault();
     
     const novoCombo = {
 

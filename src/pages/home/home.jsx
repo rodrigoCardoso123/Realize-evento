@@ -18,6 +18,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 
 const data = [
@@ -45,21 +46,21 @@ const opcoes = [
 ];
 
 function Home() {
- const navigate = useNavigate();
-const location = useLocation();
+    const navigate = useNavigate();
+    const location = useLocation();
 
-  useEffect(() => {
-    if (location.state?.scrollTo) {
-      const el = document.getElementById(location.state.scrollTo);
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            const el = document.getElementById(location.state.scrollTo);
 
-      if (el) {
-        el.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-    }
-  }, [location]);
+            if (el) {
+                el.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }
+    }, [location]);
     const swiperRef = useRef(null);
     const [selecionados, setSelecionados] = useState([]);
 
@@ -118,7 +119,7 @@ const location = useLocation();
                 <div className={estilo.banner}>
                     <div className={estilo.banner_texto}>
                         <p className={estilo.p_dourados}>casamentos & Festas Exclusivas</p>
-                        <h1 className={estilo.banner_h1}>Transdormamos <br /> momentos em <br /> experiências <br /> inesquecíveis...</h1>
+                        <h1 className={estilo.banner_h1}>Transformamos <br /> momentos em <br /> experiências <br /> inesquecíveis...</h1>
                         <p className={estilo.p_branco_banner}>Casamentos luxuosos, festas exclusivas para adultos e <br /> eventos corporativos memoráveis</p>
                         <button className={estilo.butao_banner} onClick={() => {
                             const el = document.getElementById("formulario");
@@ -152,7 +153,7 @@ const location = useLocation();
                         </div>
                         <div className={estilo.card}>
                             <h3>Eventos em Grande Escala</h3>
-                            <p>Estrutura e equipe especializada para eventos com até 5000 convidados.
+                            <p>Estrutura e equipe especializada para eventos com até 500 convidados.
                                 Logística eficiente e cardápio personalizados mantendo qualidade.
                             </p>
                         </div>
@@ -356,7 +357,7 @@ const location = useLocation();
 
                             <div className={estilo.container_contatos_juntos}>
                                 <p className={estilo.p_label}>Email</p>
-                                <a href="mailto:letodie8344@gmail.com" className={estilo.link_dourados}>letodie8344@gmail.com</a>
+                                <a href="mailto:realizeventos2026@gmail.com" className={estilo.link_dourados}>realizeventos2026@gmail.com</a>
                             </div>
 
                             <div className={estilo.container_contatos_juntos}>
@@ -367,17 +368,24 @@ const location = useLocation();
 
                             <strong className={estilo.titulos_contato}>Redes Sociais</strong>
                             <div className={estilo.container_contatos_links}>
-                                <a href="http://" target="_blank" rel="noopener noreferrer" className={estilo.link_dourados}>Facebook</a>
-                                <a href="https://instagram.com" target="_blank" className={estilo.link_dourados}>Instagram</a>
-                                <a href="" className={estilo.link_dourados}>WhatsApp</a>
+                                <a href="https://www.instagram.com/realiz_eventos/" target="_blank" className={estilo.link_dourados}>Instagram</a>
+                                <a  href="https://wa.me/5581986596934?text=Olá,%20quero%20um%20orçamento"
+                                    target="_blank" className={estilo.link_dourados}>WhatsApp</a>
                             </div>
 
-                            <p className={estilo.link_dourados}>Conheça nossa história →</p>
+                            <Link to="/Servico" className={estilo.link_dourados}>Conheça nossa história →</Link>
                         </div>
                         <div className={estilo.container_divido}>
                             <strong className={estilo.titulos_contato}>Fale pelo WhatsApp</strong>
                             <p className={estilo.p_label}>Clique abaixo para iniciar uma conversa direta <br /> com nossa equipe</p>
-                            <button className={estilo.butao_wwp}><a href="tel:+" className={estilo.link_butao}>Conversar no WhatsApp</a></button>
+                            <button className={estilo.butao_wwp}><a
+                                href="https://wa.me/5581986596934?text=Olá,%20quero%20um%20orçamento"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={estilo.link_butao}
+                            >
+                                Conversar no WhatsApp
+                            </a></button>
                         </div>
                     </div>
                 </section>

@@ -25,12 +25,13 @@ function Footer(){
                 <div className={estilo.card_footer}>
                     <p className={estilo.p_dourado}>Contato</p>
 
-                    <a href="https://wa.me/5581992895675" target="_blank">
-                        WhatsApp: (81) 99289-5675
+                    <a href="https://wa.me/5581986596934?text=Olá,%20quero%20um%20orçamento"
+                                target="_blank">
+                        WhatsApp: (81) 98659-6934
                     </a>
 
-                    <a href="mailto:letodie8344@gmail.com">
-                        letodie8344@gmail.com
+                    <a href="mailto:realizeventos2026@gmail.com" target="_blank">
+                        realizeventos2026@gmail.com
                     </a>
                 </div>
             </div>
