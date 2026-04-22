@@ -352,7 +352,7 @@ function Home() {
                             <strong className={estilo.titulos_contato}>Informações de Contato</strong>
                             <div className={estilo.container_contatos_juntos}>
                                 <p className={estilo.p_label}>WhatsApp</p>
-                                <a href="https://wa.me/5581992895675" target="_blank" className={estilo.link_dourados}>(81) 99289-5675</a>
+                                <a href="https://wa.me/5581992895675" target="_blank" className={estilo.link_dourados}>(81) 98659-6934</a>
                             </div>
 
                             <div className={estilo.container_contatos_juntos}>
